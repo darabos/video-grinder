@@ -1,12 +1,25 @@
-video {
+#videos video {
   max-height: 100px;
 }
 
-p {
+#videos .video {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 
-span {
+#videos .video.selected {
+  background: whitesmoke;
+}
+
+#videos .meta {
+  display: inline-block;
+}
+
+#videos .meta span {
   margin: 0 10px;
+}
+
+#videos .meta span.name {
+  display: block;
 }

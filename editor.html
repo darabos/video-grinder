@@ -8,8 +8,9 @@
     <link href="editor.css" rel="stylesheet">
   </head>
   <body>
-    <p><video preload="auto" src="VID_20130827_144347.mp4"></video>
-    <p><video preload="auto" src="VID_20130827_144347.mp4"></video>
+    <p><input type="file" id="files" multiple onchange="addVideos(this.files)">
+    <div id="videos">
+    </div>
 
     <p><textarea>
     Click to get timing data.
