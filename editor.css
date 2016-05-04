@@ -1,0 +1,12 @@
+video {
+  max-height: 100px;
+}
+
+p {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin: 0 10px;
+}
