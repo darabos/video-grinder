@@ -96,10 +96,10 @@ $(function() {
       selected.currentTime = d(selected).start || 0;
     } else if (k == 'S'.charCodeAt(0)) {
       d(selected).start = selected.currentTime;
-      $(selected).siblings('.start').html(timestr(selected.currentTime));
+      $(selected).parent().find('.start').html(timestr(selected.currentTime));
     } else if (k == 'E'.charCodeAt(0)) {
       d(selected).end = selected.currentTime;
-      $(selected).siblings('.end').html(timestr(selected.currentTime));
+      $(selected).parent().find('.end').html(timestr(selected.currentTime));
     } else if (k == 'J'.charCodeAt(0)) {
       var next = $('#videos video')[index(selected) + 1];
       if (next !== undefined) { setSelected(next); }
