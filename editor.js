@@ -62,11 +62,11 @@ function toggle(v) {
 
 function timestr(t) {
   var min = Math.floor(t / 60);
-  var sec = t - 60 * min;
+  var sec = Math.floor(t - 60 * min);
   if (sec < 10) {
-    return min.toFixed(0) + ':0' + sec.toFixed(0);
+    return min.toString() + ':0' + sec.toString();
   } else {
-    return min.toFixed(0) + ':' + sec.toFixed(0);
+    return min.toString() + ':' + sec.toString();
   }
 }
 
