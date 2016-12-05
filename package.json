@@ -1,0 +1,18 @@
+{
+  "name": "video-grinder",
+  "version": "0.0.0",
+  "description": "Simple video cutter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/darabos/video-grinder",
+  "author": "Daniel Darabos",
+  "license": "GPL-3.0+",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

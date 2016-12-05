@@ -8,15 +8,17 @@
     <link href="editor.css" rel="stylesheet">
   </head>
   <body>
-    <p><input type="file" id="files" multiple onchange="addVideos(this.files)">
+    <div>
+      <input type="file" webkitdirectory onchange="openDir(this.files[0])">
+      <button id="save" onclick="saveData(this)">Save</button>
+    </div>
     <div id="videos">
     </div>
 
-    <p><textarea>
+    <p><textarea id="output-script">
     Click to get timing data.
     </textarea>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="editor.js"></script>
   </body>
 </html>
