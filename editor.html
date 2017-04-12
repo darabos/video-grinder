@@ -9,8 +9,7 @@
   </head>
   <body>
     <div>
-      <input type="file" webkitdirectory onchange="openDir(this.files[0])">
-      <button id="save" onclick="saveData(this)">Save</button>
+      <input type="file" webkitdirectory onchange="openDir(this.files[0].path)">
     </div>
     <div id="videos">
     </div>
